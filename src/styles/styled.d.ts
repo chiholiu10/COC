@@ -1,5 +1,7 @@
 import 'styled-components';
 
+export type ThemeMode = 'light' | 'dark';
+
 type ObjectOfStrings = Record<string | number, any>;
 
 interface Breakpoints extends Array<number> {
@@ -12,6 +14,18 @@ interface Breakpoints extends Array<number> {
 
 declare module 'styled-components' {
   export interface DefaultTheme {
+    colors: ObjectOfStrings;
+    fontWeights: {
+      regular?: string | number;
+      semiBold?: string | number;
+      bold?: string | number;
+      extraBold?: string | number;
+      black?: string | number;
+    };
+    fonts: {
+      heading: string;
+      body: string;
+    };
     breakpoints: Breakpoints;
   }
 }

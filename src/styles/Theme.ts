@@ -1,6 +1,25 @@
 import { DefaultTheme } from 'styled-components';
 
 const theme: DefaultTheme = {
+  // colors
+  colors: {
+    purple: "#aa418c",
+    white: "#fff",
+    black: "#757575",
+    textColor: "#343434"
+  },
+  // typography
+  fontWeights: {
+    regular: 300,
+    semiBold: 600,
+    bold: 700,
+    extraBold: 800,
+    black: 900
+  },
+  fonts: {
+    heading: '"Roboto", sans-serif',
+    body: '"Roboto", sans-serif'
+  },
   breakpoints: [200, 640, 768, 1024, 1440]
 };
 
