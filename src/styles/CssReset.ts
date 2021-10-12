@@ -13,7 +13,6 @@ export const CSSreset = createGlobalStyle(
       overflow-x: hidden;
       font-family: ${theme.fonts.body};
       color: ${theme.colors.black};
-      font-weight: ${theme.fontWeights.regular};
     }
     main {
       display: block;
