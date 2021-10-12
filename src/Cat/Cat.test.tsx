@@ -2,7 +2,7 @@ import { fireEvent, render } from '@testing-library/react';
 import { shallow } from 'enzyme';
 import { Cat } from './Cat';
 
-test('check radion select Cat exists', () => {
+test('check radio select Cat exists', () => {
     const component = shallow(<Cat />);
 
     expect(component.length).toEqual(1);

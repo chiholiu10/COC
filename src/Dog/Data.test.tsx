@@ -8,7 +8,7 @@ test('check select option Dog exists', () => {
     expect(component.length).toEqual(1);
 });
 
-test('should select correct time', () => {
+test('should select correct select', () => {
     const { getByTestId, getAllByTestId } = render(<Dog />);
 
     fireEvent.change(getByTestId('select'), { target: { value: "Boxer" } })
