@@ -1,6 +1,12 @@
 import styled from "styled-components";
+import { breakpoint } from "../styles/BreakPoint";
 
-export const CatComponent = styled.div``;
+export const CatComponent = styled.div`
+    flex: 1;
+    ${breakpoint.md`
+        flex: 50%;
+    `}
+`;
 
 export const CatRadioSelectBlock = styled.div``;
 export const CatLabel = styled.label`

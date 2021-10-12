@@ -1,6 +1,7 @@
-import { render, screen } from '@testing-library/react';
+import { mount } from 'enzyme';
 import { App } from './App';
 
-test('renders learn react link', () => {
-  render(<App />);
+test('renders App component', () => {
+  const appComponent = mount(<App />);
+  expect(appComponent).toHaveLength(1);
 });

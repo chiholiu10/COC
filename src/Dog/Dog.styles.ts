@@ -1,7 +1,12 @@
 import styled from "styled-components";
+import { breakpoint } from "../styles/BreakPoint";
 
 export const DogComponent = styled.div`
     height: 400px;
+    ${breakpoint.md`
+        flex: 50%;
+    `}
+
 `;
 
 export const DogSelectComponent = styled.div`
